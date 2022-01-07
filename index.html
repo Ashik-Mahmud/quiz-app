@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="./assets/fonts/css/all.min.css">
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <!-- Working tree clean  -->
+        <section class="quiz">
+            <!-- Quiz Start Button  -->
+            <div class="quiz__start-btn"><button class="quiz_button"> Start Quiz</button></div>
+
+            <!-- Some Rules before start quiz  -->
+            <div class="quiz__rules">
+                <header>
+                    <h3 class="rules__title">Some Rules of this Quiz</h3>
+                </header>
+                <div class="rules__wrapper">
+                    <div class="single__rule">1. You will have only <span>15 seconds</span> per each question.</div>
+                    <div class="single__rule">2. Once you select your answer, it can't be undone.</div>
+                    <div class="single__rule">3. You can,t select any option once time goes off.</div>
+                    <div class="single__rule">4. You can,t exit from the Quiz while you're playing.</div>
+                    <div class="single__rule">5. You will get pooints on the basis of your correct answers.</div>
+                </div>
+                <footer>
+                    <div class="footer__buttons">
+                        <button class="exit__quiz_btn">Exit Quiz</button>
+                        <button class="continue__quiz_btn">Continue</button>
+                    </div>
+                </footer>
+            </div>
+
+            <!-- Quiz Application Field  -->
+            <div class="quiz__ques">
+
+                <header>
+                    <h3 class="quiz_ques_title">Awesome Quiz Application</h3>
+                    <div class="timer">
+                        <span class="time__text">Time Left</span>
+                        <span class="time__count">15</span>
+                    </div>
+                    <div class="timeline"></div>
+                </header>
+
+                <div class="quiz__ques_wrapper">
+                    <h3 class="quiz__question">What does HTML Stand for?</h3>
+                    <div class="option__list"> </div>
+                </div>
+
+                <div class="quiz__ques_footer">
+
+                    <div class="quiz__ques_counter">
+                       
+                    </div>
+
+                    <button class="quiz__next-btn">Next Que</button>
+
+                </div>
+
+            </div>
+
+            <!-- Show Result  -->
+            <div class="quiz__ques-result">
+                <div class="quiz__emoji"><i class="fa fa-crown"></i></div>
+                <div class="quiz_result">
+                      
+                </div>
+                <div class="quiz__buttons">
+                    <button class="restart__quiz">Replay Quiz</button>
+                    <button class="quit__quiz">Quit Quiz</button>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    <!-- Scripting  -->
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/questions.js"></script>
+</body>
+</html>
