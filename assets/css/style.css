@@ -12,7 +12,7 @@
     padding: 0px;
     user-select: none;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -34,7 +34,7 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition:  0.2s;
+    transition: 0.2s;
 }
 
 
@@ -65,6 +65,7 @@ a {
     opacity: 0;
     width: 450px;
 }
+
 
 .quiz__rules header {
     padding: .7em;
@@ -152,7 +153,8 @@ a {
     justify-content: space-between;
 
 }
-.quiz__ques header .timeline{
+
+.quiz__ques header .timeline {
     width: 0%;
     height: 2px;
     background: var(--primary-color);
@@ -243,19 +245,23 @@ a {
     color: #a4283a;
     font-size: 17px;
 }
-.quiz__ques_wrapper .option__list .option.correct{
+
+.quiz__ques_wrapper .option__list .option.correct {
     background: #d4edda;
     color: #23903c;
     border-color: #c3e6cb;
 }
+
 .quiz__ques_wrapper .option__list .option.incorrect {
     background: #f8d7da;
     color: #721c24;
     border-color: #f5c6cb;
 }
+
 .quiz__ques_wrapper .option__list .option.disabled {
     pointer-events: none;
 }
+
 .quiz__ques_footer {
     position: relative;
     display: flex;
@@ -288,7 +294,8 @@ a {
     opacity: .5;
     transition: .3s;
 }
-.quiz__ques_footer .quiz__next-btn.activeNextBtn{
+
+.quiz__ques_footer .quiz__next-btn.activeNextBtn {
     opacity: 1;
     pointer-events: auto;
 }
@@ -303,9 +310,21 @@ a {
     border-radius: 4px;
     box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.2);
     /* display: none; */
-    transform: translate(-50%,-50%) scale(.9);
+    transform: translate(-50%, -50%) scale(.9);
     pointer-events: none;
     opacity: 0;
+}
+
+@media (max-width: 768px) {
+
+    .quiz__rules,
+    .quiz__ques,
+    .quiz__ques-result {
+        width: 100%;
+    }
+    .quiz__ques header .quiz_ques_title{
+        font-size: 15px;
+    }
 }
 
 .quiz__ques-result .quiz__emoji {
@@ -347,7 +366,7 @@ a {
 /* JS including class  */
 .activeRulesBox,
 .activeQuestionBox,
-.activeQuizResult{
+.activeQuizResult {
     transform: translate(-50%, -50%) scale(1);
     pointer-events: all;
     opacity: 1;
